@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# -----------------------------------------------------------------------------
+# Gradle Startup for my very custom directories
+#
+GRADLE_HOME='/c/Programs/gradle-4.10.2'
+GRADLE_USER_HOME='/c/data/gradle-data'
+exec "$GRADLE_HOME/bin/gradle" --gradle-user-home="$GRADLE_USER_HOME" "$@"

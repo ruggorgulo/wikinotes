@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# -----------------------------------------------------------------------------
+# Apache Maven Startup for my very custom directories
+#
+MAVEN_HOME='/c/Programs/apache-maven-3.5.3'
+MAVEN_USER_SETTINGS='/c/data/maven-data/'
+exec "$MAVEN_HOME/bin/mvn" -s "$MAVEN_USER_SETTINGS/settings.xml" "$@"
